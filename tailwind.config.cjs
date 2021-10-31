@@ -1,4 +1,15 @@
-module.exports = {
+const config = {
 	mode: 'jit',
-	purge: ['./src/**/*.svelte']
+	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	corePlugins: {
+		preflight: false
+	},
+
+	theme: {
+		extend: {}
+	},
+
+	plugins: []
 };
+
+module.exports = config;

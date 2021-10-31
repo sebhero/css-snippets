@@ -1,12 +1,8 @@
 <script>
-	import Nav from '../components/nav.svelte';
+	import NavMenu from '$lib/components/nav-menu.svelte';
+
+	import '$lib/tailwind.postcss';
 </script>
 
-<Nav />
+<NavMenu />
 <slot />
-
-<style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>
